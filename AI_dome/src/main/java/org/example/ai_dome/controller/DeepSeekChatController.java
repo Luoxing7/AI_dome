@@ -20,7 +20,7 @@ public class DeepSeekChatController {
         public Flux<String> generateStream(@RequestParam(value = "message", defaultValue = "你是谁？") String message) {
             // 构建提示词
             Prompt prompt = new Prompt(new UserMessage(message));
-            // 一次性返回结果
+            // 流式输出
             return chatModel.stream(prompt).mapNotNull(chatResponse -> chatResponse.getResult().getOutput().getText());
     }
 }

@@ -4,9 +4,9 @@ server:
 spring:
   ai:
     deepseek:
-      api-key: sk-2f3ed14925104d549da53788caff8cb7 # ?? DeepSeek Api Key, ??????
+      api-key: sk-7093e866acf74aa3b189ef313838cb8d # ?? DeepSeek Api Key, ??????
       base-url: https://api.deepseek.com # DeepSeek ??? URL, ???????? api.deepseek.com
       chat:
         options:
-          model: deepseek-chat # ??????
-          temperature: 0.8 # ???
+          model: deepseek-chat # 使用哪个模型
+          temperature: 0.8 # 温度值
